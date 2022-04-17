@@ -19,7 +19,7 @@ def Fibonacci_no2(n,temp):#The same recursive method, but we use a list to save 
         temp[n-1]=(Fibonacci_no2(n-1,temp)+Fibonacci_no2(n-2,temp)) 
     return temp[n-1]
 
-def Fibonacci_no3(n):#This is a poor calculative function that uses the close type of Fibonacci.
+def Fibonacci_no3(n):#This is a pure calculative function that uses the close type of Fibonacci.
     phi=(1+np.sqrt(5))/2
     psi=(1-np.sqrt(5))/2
     return (phi**n-psi**n)/np.sqrt(5)
